@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		
+		<script type="text/javascript" src="js/petProject1.js" ></script>
+		<meta charset="utf-8">
+		<title>Pizza Calculator</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		
+		<header id="header">
+      <div class="page-container">
+        <h2 id="site-name"><a href="#">Calc Inc.</a></h2>
+      </div>
+      <nav id="main-menu">
+        <div class="page-container">
+          <h3 class="hidden">Main navigation</h3>
+          <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+	<div class="page-container">
+		<main>
+			<h1>Pizza Calculator</h1>
+			<h2>How Many Slices On A Pizza</h2>
+			<p>Most pizza chains and restaurants will slice a pizza tray depending on the size, here is the common metric: <span>6</span> slices per small pizza,   <span>8</span> slices per medium pizza,   <span>10</span> slices on a large pizza.</p>
+			<h2>How Many Slices do we eat on average?</h2>
+			<p>On average...</p>
+			<p>A <span>child</span> eats 2 small pizza slices or 1.5 medium pizza slices or 1 large pizza slice.</p>
+			<p>An <span>adult</span> (average eater) eats 4 small pizza slices or 3 medium pizza slices or 2 large pizza slices.</p>
+			<p>A <span>pizza lover</span> (eats more than average) eats 6 small pizza slices or 4.5 medium pizza slices or 3 large pizza slices.</p>
+			<form name="calculator">
+				<label for="pizza_size">Select pizza size</label>
+				<select id="pizza_size" name="size_selection">
+					<option value="Size">--Size--</option>
+					<option  value="6">Small</option>
+					<option  value="8">Medium</option>
+					<option  value="10">Large</option>
+				</select>
+			
+				<div id="questions">
+					<p>How big of an eater are you?</p> <p>Number of peoples</p> </p>
+					
+						<div id="Big">
+							<label  for="Big_Eater">An Eater</label> 
+							<input class="1" type="number" id="numberOfPeople_Big_Eater" name="Big"  /> (if you eat more that average)
+						</div>
+						<div id="avg">
+							<label  for="Avg">Average </label>
+							<input class="1" type="number" id="numberOfPeople_Avg" name="Average"   />
+						</div>
+						<div id="kid">
+							<label   for="child">Children</label>
+							<input class="1" type="number" id="numberOfPeople_child" name="children_portion"  />
+						</div>
+						<input id="btn" type="submit" value="Calculte" name="submit"/>
+						
+				</div>
+				
+				
+				
+				<!--- to display after user print the answers--->
+				<section id="toDisplay">
+					<p>You should order...<p>
+					<p> <span id="answer">number</span> <span id="size"> size</span></p>
+				</section>
+			</form>
+		</main>
+	</div>	
+		<footer id="footer">
+		<div class="page-container">
+			<div>&copy; Copyright Yifat Tshuva 2021.</div>
+    </div>	
+		</footer>
+	</body>
+	
+</html>
